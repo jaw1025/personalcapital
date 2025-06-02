@@ -43,6 +43,7 @@ class PersonalCapital(object):
 
     def login(self, username, password):
         initial_csrf = self.__get_csrf_from_home_page(base_url)
+        print(initial_csrf)
         csrf, auth_level = self.__identify_user(username, initial_csrf)
 
         if csrf and auth_level:
