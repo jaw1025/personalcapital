@@ -2,7 +2,7 @@ import requests
 import re
 
 csrf_regexp = re.compile(r"globals.csrf='([a-f0-9-]+)'")
-base_url = 'https://home.personalcapital.com'
+base_url = 'https://home.personalcapital.com/page/login/goHome'
 api_endpoint = base_url + '/api'
 
 SP_HEADER_KEY = "spHeader"
